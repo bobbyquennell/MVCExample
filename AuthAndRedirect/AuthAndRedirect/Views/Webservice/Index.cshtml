@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Please fill the form and submit</h2>
+<div class="container ">
+    @using (@Html.BeginForm("CheckForm", "Webservice", FormMethod.Post))
+    {
+        <fieldset>
+            <input class=" form-control" type="email" value="" placeholder="tonny@abc.com" required name="emailToCheck_1" />
+            <input class="form-control" type="email" value="" placeholder="2@abc.com" required name="emailToCheck_2" />
+            <input class="form-control" type="email" value="" placeholder="3@abc.com" required name="emailToCheck_3" />
+            <input class="form-control" type="email" value="" placeholder="4@abc.com" required name="emailToCheck_4" />
+            <input class="form-control" type="email" value="" placeholder="5@abc.com" required name="emailToCheck_5" />
+            <input class="form-control" type="email" value="" placeholder="6@abc.com" required name="emailToCheck_6" />
+            <input class="form-control" type="email" value="" placeholder="7@abc.com" required name="emailToCheck_7" />
+            <input class="form-control" type="email" value="" placeholder="8@abc.com" required name="emailToCheck_8" />
+            <div>
+                <input class="form-control btn btn-danger" type="submit" value="submit and check" />
+            </div>
+        </fieldset>
+    }
+</div>
